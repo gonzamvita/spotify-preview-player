@@ -28,7 +28,7 @@ function wakePlayer(track) {
 
 $('.btn-play').on('click', function (event) {
     var audioPlayer = audioPlayer;
-    audioPlayer.addEventListener('timeupdate', onTimeUpdate, useCapture);
+    // audioPlayer.addEventListener('timeupdate', onTimeUpdate, useCapture);
     $(event.currentTarget).removeClass('disabled')
     if ($(event.currentTarget).hasClass('playing')) {
         audioPlayer.trigger('pause');
